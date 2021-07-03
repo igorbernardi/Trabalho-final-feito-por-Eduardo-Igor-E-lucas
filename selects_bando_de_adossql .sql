@@ -8,7 +8,7 @@ inner join endereco on endereco.codpac = paciente.codpac
 inner join cidade on cidade.codcid = endereco.codcid
 where paciente.peso > 80 and 
 (
-	cidade.nomecid in ('Maravilha','Descanso','Pinhalzinho','Chapecó','Itapiranga')
+	cidade.nomecid in ('Maravilha','Descanso','Pinhalzinho','ChapecÃ³','Itapiranga')
 );
 
 select cidade.codcid, cidade.nomecid, COUNT(paciente.suspeito) from paciente
